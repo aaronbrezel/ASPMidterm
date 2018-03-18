@@ -58,16 +58,16 @@ setMethod(f="raschEAP",
               return(g)
             }
             
-            #print(integrate(numFunc, lower, upper))
+            print(integrate(numFunc(theta), lower, upper))
             #print(integrate(denomFunc, lower, upper))
             areaUnderCurveNum <- 0
             areaUnderCurveDenom <- 0
-            for(i in seq(lower, upper, by = 0.01)){
+            for(i in seq(lower, upper, by = 0.01)){ #calculates the height at each interval and multiplies it by 0.01 
               areaUnderCurveNum <- areaUnderCurveNum + (numFunc(i)*0.1)
               areaUnderCurveDenom <- areaUnderCurveDenom + (denomFunc(i)*0.1)
             } 
-            print(areaUnderCurveNum)
-            print(areaUnderCurveDenom)
+            #print(areaUnderCurveNum)
+            #print(areaUnderCurveDenom)
             return(areaUnderCurveNum/areaUnderCurveDenom)
             #return(integrate(numFunc, lower, upper)/integrate(denomFunc, lower, upper))
           }
