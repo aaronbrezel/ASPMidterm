@@ -16,8 +16,5 @@ check(current.code)
 a <- c(1,2,3,4,5,6,7,8,9,10)
 yJ <- c(1,0,1,1,0,1,1,1,0,1)
 Brian <- new("Rasch", name = "Brian", a = a, yJ = yJ)
-Brian
-
-theta <- 5
-length(theta)
-!is.numeric(theta)
+raschProbability(Brian, 5)
+raschLikelihood(Brian, 5)

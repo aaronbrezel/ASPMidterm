@@ -16,4 +16,5 @@ Suggests:
 Collate:
   'raschClass.R'
   'raschProbability.R'
+  'raschLikelihood.R'
 RoxygenNote: 6.0.1

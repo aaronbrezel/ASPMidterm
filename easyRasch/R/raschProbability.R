@@ -17,8 +17,9 @@
 #' Brian <- new("Rasch", name = "Brian", a = a, yJ = yJ)
 #' theta = 5
 #' raschProbability(Brian, 5)
+#' @seealso \code{\link{raschLikelihood}}
 #' @rdname raschProbability
-
+#' @aliases raschProbability,ANY-method
 #' @export
 setGeneric(name="raschProbability",
            def=function(raschObj, theta)
