@@ -66,6 +66,8 @@ setMethod(f="raschEAP",
               areaUnderCurveNum <- areaUnderCurveNum + (numFunc(i)*0.1)
               areaUnderCurveDenom <- areaUnderCurveDenom + (denomFunc(i)*0.1)
             } 
+            print(areaUnderCurveNum)
+            print(areaUnderCurveDenom)
             return(areaUnderCurveNum/areaUnderCurveDenom)
             #return(integrate(numFunc, lower, upper)/integrate(denomFunc, lower, upper))
           }
