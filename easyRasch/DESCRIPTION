@@ -17,4 +17,6 @@ Collate:
   'raschClass.R'
   'raschProbability.R'
   'raschLikelihood.R'
+  'raschPrior.R'
+  'raschEAP.R'
 RoxygenNote: 6.0.1
