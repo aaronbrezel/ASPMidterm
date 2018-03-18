@@ -50,16 +50,23 @@ setMethod(f="raschEAP",
               return("Yo, your lowerbound value must be less than your upperbound input")
             }
             numFunc <- function(theta){ #function for the numerator of the EAP function
-              return(theta*raschLikelihood(raschObj,theta)*raschPrior(theta))
+              f <- theta*raschLikelihood(raschObj,theta)*raschPrior(theta)
+              return(f)
             }
             denomFunc <- function(theta){ #function for the denominator of the EAP function
-              return(raschLikelihood(raschObj,theta)*raschPrior(theta))
+              g <- raschLikelihood(raschObj,theta)*raschPrior(theta)
+              return(g)
             }
-            print(numFunc(-5))
-            print(integrate(numFunc, lower, upper))
-            print(integrate(denomFunc, lower, upper))
             
-            return(0)
+            #print(integrate(numFunc, lower, upper))
+            #print(integrate(denomFunc, lower, upper))
+            areaUnderCurveNum <- 0
+            areaUnderCurveDenom <- 0
+            for(i in seq(lower, upper, by = 0.01)){
+              areaUnderCurveNum <- areaUnderCurveNum + (numFunc(i)*0.1)
+              areaUnderCurveDenom <- areaUnderCurveDenom + (denomFunc(i)*0.1)
+            } 
+            return(areaUnderCurveNum/areaUnderCurveDenom)
             #return(integrate(numFunc, lower, upper)/integrate(denomFunc, lower, upper))
           }
 )
