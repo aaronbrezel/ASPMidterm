@@ -16,9 +16,9 @@
 #' yJ <- c(1,0,1,1,0,1,1,1,0,1)
 #' Brian <- new("Rasch", name = "Brian", a = a, yJ = yJ)
 #' theta = 5
-#' raschLikelihood(Brian, 5)
+#' raschLikelihood(Brian, theta)
 #' @seealso \code{\link{raschProbability}}
-#' @rdname raschProbability
+#' @rdname raschLikelihood
 #' @aliases raschLikelihood,ANY-method
 #' @export
 setGeneric(name="raschLikelihood",

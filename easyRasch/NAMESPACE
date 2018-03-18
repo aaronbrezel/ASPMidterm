@@ -2,8 +2,10 @@
 
 export()
 export(raschLikelihood)
+export(raschPrior)
 export(raschProbability)
 exportClasses(Rasch)
 exportMethods(initialize)
 exportMethods(raschLikelihood)
+exportMethods(raschPrior)
 exportMethods(raschProbability)

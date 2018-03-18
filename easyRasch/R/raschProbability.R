@@ -16,7 +16,7 @@
 #' yJ <- c(1,0,1,1,0,1,1,1,0,1)
 #' Brian <- new("Rasch", name = "Brian", a = a, yJ = yJ)
 #' theta = 5
-#' raschProbability(Brian, 5)
+#' raschProbability(Brian, theta)
 #' @seealso \code{\link{raschLikelihood}}
 #' @rdname raschProbability
 #' @aliases raschProbability,ANY-method
