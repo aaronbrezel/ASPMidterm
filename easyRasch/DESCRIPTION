@@ -1,9 +1,17 @@
-Package: anRpackage
+Package: easyRasch
 Type: Package
-Title: What the package does (short line)
+Title: An "R" version of the Rasch model
 Version: 1.0
 Date: 2018-03-18
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Aaron J. Brezel
+Maintainer: Aaron J. Brezel <aaronbrezel@wustl.edu>
+Description: Creates a collection of functions to help expedite the Rasch model in "R" 
+Depends:
+  R (>= 3.0.0),
+  methods
+License: GPL (>= 2)
+ingEncode: UTF-8
+Suggests:
+  devtools
+Collate:
+RoxygenNote: 6.0.1
