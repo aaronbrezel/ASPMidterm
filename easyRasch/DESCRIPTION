@@ -15,4 +15,5 @@ Suggests:
   devtools
 Collate:
   'raschClass.R'
+  'raschProbability.R'
 RoxygenNote: 6.0.1
