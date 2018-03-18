@@ -23,6 +23,6 @@ setGeneric(name="raschPrior",
 #'@export
 setMethod(f="raschPrior",
           definition=function(theta){
-            return(dnorm(theta, mean = 0, sd = 3))  
+            return(dnorm(theta, mean = 0, sd = 3))  #dnorm indicate a normal distirbution curve. mean = 0 sets the mean at zero. sd = 3 sets the standard deviation at 3
           }
 )
