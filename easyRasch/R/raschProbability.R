@@ -44,9 +44,9 @@ setMethod(f="raschProbability",
             })
             probCorr <- unlist(probCorr, use.names = FALSE) #turns the list created by lapply into a vector
             which(raschObj@yJ == 0) #figures out which index numbers (questions) the student got wrong. This list of indicies can also be applied to probCorr
-            PQ <- probCorr
-            PQ[which(raschObj@yJ == 0)] <- 1 - PQ[which(raschObj@yJ == 0)]
-            output <- list("probCorr" = probCorr, "PQ" = PQ)
+            PQ <- probCorr 
+            PQ[which(raschObj@yJ == 0)] <- 1 - PQ[which(raschObj@yJ == 0)] #swaps out the Pij values for Qij values when y == 0
+            output <- list("probCorr" = probCorr, "PQ" = PQ) #puts both the outputs together as a list for convinence
             return(output)
           }
 )

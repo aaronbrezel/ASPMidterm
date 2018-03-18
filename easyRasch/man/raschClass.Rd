@@ -3,12 +3,12 @@
 \docType{class}
 \name{Rasch-class}
 \alias{Rasch-class}
-\title{A rasch}
+\title{A file of the easyRasch package}
 \description{
 Object of class \code{Rasch} are created by the \code{integrateIt} functions
 }
 \details{
-An object of the class "Trapezoid" or "Simpsons" has the following slots:
+An object of the class "rasch" has the following slots:
 \itemize{
 \item \code{name} A character string indicating the name of the student
 \item \code{a} A vector of difficulty values for each test question
