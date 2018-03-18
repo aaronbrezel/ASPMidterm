@@ -1,9 +1,9 @@
-#' A rasch
+#' A file of the easyRasch package 
 #' 
 #' Object of class \code{Rasch} are created by the \code{integrateIt} functions
 #'
 #' 
-#' An object of the class "Trapezoid" or "Simpsons" has the following slots:
+#' An object of the class "rasch" has the following slots:
 #' \itemize{
 #' \item \code{name} A character string indicating the name of the student
 #' \item \code{a} A vector of difficulty values for each test question
